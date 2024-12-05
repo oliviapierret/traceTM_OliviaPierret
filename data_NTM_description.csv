@@ -1,0 +1,10 @@
+ab_star
+q0,q1,qaccept,qreject
+a,b
+a,b,_
+q0
+qaccept
+qreject
+q0,a,q1,a,R
+q1,b,q1,b,R
+q1,_,qaccept,_,L
