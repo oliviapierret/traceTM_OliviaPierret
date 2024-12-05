@@ -56,7 +56,7 @@ class NTM:
                 with open("output_data.txt", "a") as file:
                     file.write(f'Machine Name: {self.machine_name}\n')
                     file.write(f'Original Input: {input_string}\n')
-                    file.write(f"Accepted in {steps_taken} steps\n")
+                    file.write(f"Accepted in {steps_taken} transitions\n")
                     file.write(f"Degree of Nondeterminism: {max_nondeterminism}\n")
                     self.print(all_steps, file=file)
                 return
@@ -95,7 +95,7 @@ class NTM:
                 with open("output_data.txt", "a") as file:
                     file.write(f'Machine Name: {self.machine_name}\n')
                     file.write(f'Original Input: {input_string}\n')
-                    file.write(f"Execution stopped after max steps exceeded: {max_steps}\n")
+                    file.write(f"Execution stopped after max transitions exceeded: {max_steps}\n")
                     file.write(f"Degree of Nondeterminism: {max_nondeterminism}\n")
                     file.write("\n")
                 return
@@ -104,7 +104,7 @@ class NTM:
         with open("output_data.txt", "a") as file:
             file.write(f'Machine Name: {self.machine_name}\n')
             file.write(f'Original Input: {input_string}\n')
-            file.write(f'Rejected after {steps_taken} steps\n')
+            file.write(f'Rejected after {steps_taken} transitions\n')
             file.write(f"Degree of Nondeterminism: {max_nondeterminism}\n")
             self.print(all_steps, file=file)
 
