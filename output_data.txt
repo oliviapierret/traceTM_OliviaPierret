@@ -1,0 +1,67 @@
+Machine Name: a plus b star
+Original Input: a
+Accepted in 3 transitions
+Degree of Nondeterminism: 2
+[] | q0 | ['a']
+['a'] | q0 | ['_']
+['a'] | q1 | ['_']
+['a', '_'] | qaccept | ['_']
+
+Machine Name: a plus b star
+Original Input: ab
+Accepted in 4 transitions
+Degree of Nondeterminism: 2
+[] | q0 | ['a', 'b']
+['a'] | q0 | ['b']
+['a'] | q1 | ['b']
+['a', 'b'] | q1 | ['_']
+['a', 'b', '_'] | qaccept | ['_']
+
+Machine Name: a plus b star
+Original Input: aab
+Accepted in 6 transitions
+Degree of Nondeterminism: 2
+[] | q0 | ['a', 'a', 'b']
+['a'] | q0 | ['a', 'b']
+['a'] | q1 | ['a', 'b']
+['a', 'a'] | q0 | ['b']
+['a', 'a'] | q1 | ['b']
+['a', 'a', 'b'] | q1 | ['_']
+['a', 'a', 'b', '_'] | qaccept | ['_']
+
+Machine Name: a plus b star
+Original Input: aabbbbb
+Accepted in 10 transitions
+Degree of Nondeterminism: 2
+[] | q0 | ['a', 'a', 'b', 'b', 'b', 'b', 'b']
+['a'] | q0 | ['a', 'b', 'b', 'b', 'b', 'b']
+['a'] | q1 | ['a', 'b', 'b', 'b', 'b', 'b']
+['a', 'a'] | q0 | ['b', 'b', 'b', 'b', 'b']
+['a', 'a'] | q1 | ['b', 'b', 'b', 'b', 'b']
+['a', 'a', 'b'] | q1 | ['b', 'b', 'b', 'b']
+['a', 'a', 'b', 'b'] | q1 | ['b', 'b', 'b']
+['a', 'a', 'b', 'b', 'b'] | q1 | ['b', 'b']
+['a', 'a', 'b', 'b', 'b', 'b'] | q1 | ['b']
+['a', 'a', 'b', 'b', 'b', 'b', 'b'] | q1 | ['_']
+['a', 'a', 'b', 'b', 'b', 'b', 'b', '_'] | qaccept | ['_']
+
+Machine Name: a plus b star
+Original Input: abbbbbbbbbbbbbb
+Execution stopped after max transitions exceeded: 15
+Degree of Nondeterminism: 2
+
+Machine Name: a plus b star
+Original Input: ba
+Rejected after 1 transitions
+Degree of Nondeterminism: 0
+[] | q0 | ['b', 'a']
+
+Machine Name: a plus b star
+Original Input: aba
+Rejected after 4 transitions
+Degree of Nondeterminism: 2
+[] | q0 | ['a', 'b', 'a']
+['a'] | q0 | ['b', 'a']
+['a'] | q1 | ['b', 'a']
+['a', 'b'] | q1 | ['a']
+
