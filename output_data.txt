@@ -1,5 +1,7 @@
+All of the following are for a+b*
+
 Machine Name: a plus b star
-Original Input: a
+Input String: a
 Accepted in 3 transitions
 Degree of Nondeterminism: 2
 [] | q0 | ['a']
@@ -8,7 +10,7 @@ Degree of Nondeterminism: 2
 ['a', '_'] | qaccept | ['_']
 
 Machine Name: a plus b star
-Original Input: ab
+Input String: ab
 Accepted in 4 transitions
 Degree of Nondeterminism: 2
 [] | q0 | ['a', 'b']
@@ -18,7 +20,7 @@ Degree of Nondeterminism: 2
 ['a', 'b', '_'] | qaccept | ['_']
 
 Machine Name: a plus b star
-Original Input: aab
+Input String: aab
 Accepted in 6 transitions
 Degree of Nondeterminism: 2
 [] | q0 | ['a', 'a', 'b']
@@ -30,7 +32,7 @@ Degree of Nondeterminism: 2
 ['a', 'a', 'b', '_'] | qaccept | ['_']
 
 Machine Name: a plus b star
-Original Input: aabbbbb
+Input String: aabbbbb
 Accepted in 10 transitions
 Degree of Nondeterminism: 2
 [] | q0 | ['a', 'a', 'b', 'b', 'b', 'b', 'b']
@@ -46,18 +48,18 @@ Degree of Nondeterminism: 2
 ['a', 'a', 'b', 'b', 'b', 'b', 'b', '_'] | qaccept | ['_']
 
 Machine Name: a plus b star
-Original Input: abbbbbbbbbbbbbb
+Input String: abbbbbbbbbbbbbb
 Execution stopped after max transitions exceeded: 15
 Degree of Nondeterminism: 2
 
 Machine Name: a plus b star
-Original Input: ba
+Input String: ba
 Rejected after 1 transitions
 Degree of Nondeterminism: 0
 [] | q0 | ['b', 'a']
 
 Machine Name: a plus b star
-Original Input: aba
+Input String: aba
 Rejected after 4 transitions
 Degree of Nondeterminism: 2
 [] | q0 | ['a', 'b', 'a']
