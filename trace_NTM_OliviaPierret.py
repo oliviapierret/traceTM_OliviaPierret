@@ -55,8 +55,9 @@ class NTM:
             if current_state == self.accept_state:
                 with open("output_data.txt", "a") as file:
                     file.write(f'Machine Name: {self.machine_name}\n')
-                    file.write(f'Original Input: {input_string}\n')
-                    file.write(f"Accepted in {steps_taken} transitions\n")
+                    file.write(f'Input String: {input_string}\n')
+                    file.write(f"Accepted in {steps_taken} states\n")
+                    file.write(f"Depth: {steps_taken - 1}\n")
                     file.write(f"Degree of Nondeterminism: {max_nondeterminism}\n")
                     self.print(all_steps, file=file)
                 return
@@ -94,7 +95,7 @@ class NTM:
             if steps_taken > max_steps:
                 with open("output_data.txt", "a") as file:
                     file.write(f'Machine Name: {self.machine_name}\n')
-                    file.write(f'Original Input: {input_string}\n')
+                    file.write(f'Input String: {input_string}\n')
                     file.write(f"Execution stopped after max transitions exceeded: {max_steps}\n")
                     file.write(f"Degree of Nondeterminism: {max_nondeterminism}\n")
                     file.write("\n")
@@ -103,8 +104,9 @@ class NTM:
         # handle rejection
         with open("output_data.txt", "a") as file:
             file.write(f'Machine Name: {self.machine_name}\n')
-            file.write(f'Original Input: {input_string}\n')
-            file.write(f'Rejected after {steps_taken} transitions\n')
+            file.write(f'Input String: {input_string}\n')
+            file.write(f'Rejected after {steps_taken} states\n')
+            file.write(f"Depth: {steps_taken - 1}\n")
             file.write(f"Degree of Nondeterminism: {max_nondeterminism}\n")
             self.print(all_steps, file=file)
 
