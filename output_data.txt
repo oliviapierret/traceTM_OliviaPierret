@@ -2,7 +2,8 @@ All of the following are for a+b*
 
 Machine Name: a plus b star
 Input String: a
-Accepted in 3 transitions
+Accepted in 3 states
+Depth: 2
 Degree of Nondeterminism: 2
 [] | q0 | ['a']
 ['a'] | q0 | ['_']
@@ -11,7 +12,8 @@ Degree of Nondeterminism: 2
 
 Machine Name: a plus b star
 Input String: ab
-Accepted in 4 transitions
+Accepted in 4 states
+Depth: 3
 Degree of Nondeterminism: 2
 [] | q0 | ['a', 'b']
 ['a'] | q0 | ['b']
@@ -21,7 +23,8 @@ Degree of Nondeterminism: 2
 
 Machine Name: a plus b star
 Input String: aab
-Accepted in 6 transitions
+Accepted in 6 states
+Depth: 5
 Degree of Nondeterminism: 2
 [] | q0 | ['a', 'a', 'b']
 ['a'] | q0 | ['a', 'b']
@@ -33,7 +36,8 @@ Degree of Nondeterminism: 2
 
 Machine Name: a plus b star
 Input String: aabbbbb
-Accepted in 10 transitions
+Accepted in 10 states
+Depth: 9
 Degree of Nondeterminism: 2
 [] | q0 | ['a', 'a', 'b', 'b', 'b', 'b', 'b']
 ['a'] | q0 | ['a', 'b', 'b', 'b', 'b', 'b']
@@ -54,13 +58,15 @@ Degree of Nondeterminism: 2
 
 Machine Name: a plus b star
 Input String: ba
-Rejected after 1 transitions
+Rejected after 1 states
+Depth: 0
 Degree of Nondeterminism: 0
 [] | q0 | ['b', 'a']
 
 Machine Name: a plus b star
 Input String: aba
-Rejected after 4 transitions
+Rejected after 4 states
+Depth: 3
 Degree of Nondeterminism: 2
 [] | q0 | ['a', 'b', 'a']
 ['a'] | q0 | ['b', 'a']
